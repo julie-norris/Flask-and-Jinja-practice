@@ -4,20 +4,29 @@
 
 {% block content %}
     <form action='/madlib'>
-        Name:<input type='text' name='name'><br><br>
+        Proper noun: <input type='text' name='name'><br><br>
+        Pick a color: 
         <input type='radio' name='color' value='red'>red
         <input type='radio' name='color' value='blue'>blue
         <input type='radio' name='color'value='marigold'>marigold
         <input type='radio' name='color' value='violet'>violet
         <input type='radio' name='color' value='green'>green<br><br>
-        <select name='noun'>Noun: 
+        Pick a noun: 
+        <select name='noun'> 
             <option value="horse">horse</option>
             <option value="bed">bed</option>
             <option value="table">table</option>
             <option value="teacher">teacher</option>
             <option value="cup">cup</option>
         </select>
+        <br/>
+        <br/>
         Adjective: <input type='text' name='adjective'>
+    <br/>
+    <br/>
     <input type='submit'>
+    <br/>
     </form>
+    <br/>
+    <br/>
 {% endblock %}
